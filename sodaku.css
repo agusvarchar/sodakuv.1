@@ -1,0 +1,36 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #f4f4f9;
+}
+
+.sudoku-board {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3, 60px);
+    gap: 5px;
+}
+
+.sudoku-board input {
+    width: 58px;
+    height: 58px;
+    text-align: center;
+    font-size: 1.5em;
+    border: 1px solid #ddd;
+}
+
+.sudoku-board input:focus {
+    outline: none;
+    border: 1px solid #666;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+}
